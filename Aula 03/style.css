@@ -1,0 +1,120 @@
+:root {
+    --bg: #0b0d12;
+    --line: rgba(255, 255, 255, 0.12);
+    --text: #f5f7fa;
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;/*dizer a para o navegador*/
+    background: 
+        radil-gradient(circle at top, rgba(255,170,0,0.12), transparente 3);
+        linear-gradient(100deg, #090b10, #0f121a 45%, #0b0d12)
+    
+    color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none; /*sublinhado (none - nao sublinha*/
+}
+
+.destaque-principal {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;/*centraliza o texto*/
+    padding: 24px 0 56px;
+}
+
+.barra-superior {
+    display: flex; /*agora é em linha*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; /*espaço interno*/
+}
+
+.logo {
+    font-size: 1.1rem; /*tamanho - rem é dinamicamente*/
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.botao-contorno {
+    border: 1px solid var(--line);
+    color: var(--text);
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 10px 18px;
+    border-radius: 999px;/*borda arredondada*/
+}
+
+.conteudo-destaque {
+    max-width: 760px;
+    padding: 80px 0;
+}
+
+.texto-destaque {
+    color: #d6a84f;
+    text-transform: uppercase;
+    letter-spacing: 0.18;/*espaço entre as letras*/
+    font-size: 0.8rem;
+    margin-bottom: 16px;/*margem em baixo*/
+}
+
+h1 {
+    font-size: clamp(2.4em, 6vw, 5.4rem);
+    line-height: 1.02;/*reduz altura entre as linhas*/
+    letter-spacing: -0.04;
+    margin-bottom: 24px;
+}
+
+.subtitulo {
+    max-width: 620px;
+    font-size: 1.15rem;
+    margin-bottom: 32px;
+    color: #b8c0cc;
+}
+
+.acoes-destaque {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.botao-primario,
+.botao-secundario,
+.botao-contorno {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 22px;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: 0.25s ease;/*posicionar o mouse*/
+}
+
+.botao-primario {
+    background-color: #d6a84f;
+    color: #111;
+}
+
+.botao-secundario {
+    border: 1px solid var(--line);
+    color: var(--text);
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.botao-primario:hover {
+    background-color: #f0bf61;
+    transform: translateY(-1px);
+}
+
+.botao-secundario:hover,
+.botao-contorno:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}

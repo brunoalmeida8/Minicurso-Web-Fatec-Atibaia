@@ -1,0 +1,37 @@
+/*classe*/
+.cor-texto {
+    text-align: center;
+    color: blue;
+}
+
+.center {
+    text-align: center;
+}
+
+/*id*/
+#texto-destaque {
+    text-align: end;
+    color: blueviolet;
+}
+
+
+
+
+
+
+
+
+/*por elemento*/
+h1 {
+    background-color: aqua;
+}
+
+h2 {
+    text-align: center;
+    background-color: red;
+}
+
+/*aplica em tudo - resetar */
+*{
+
+}
