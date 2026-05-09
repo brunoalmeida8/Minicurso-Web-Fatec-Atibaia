@@ -1,0 +1,75 @@
+
+/*classe*/
+.cor-texto {
+    text-align: center;
+    color: blue;
+}
+
+.center {
+    text-align: center;
+}
+
+/*id*/
+#texto-destaque {
+    text-align: end;
+    color: blueviolet;
+}
+
+
+
+
+
+
+
+
+/*por elemento */
+h1 {
+    background-color: gray;
+}
+
+h2 {
+    text-align: center;
+    background-color: red;
+}
+
+/*aplica em tudo - resetar */
+*{
+
+}
+
+
+.teste {
+  margin: 10px; /* margem externa*/
+  padding: 10px 50px;/* margen interna*/
+  border: 5px solid red; /*bordinha entre margin e padding*/
+  
+}
+
+.botao-primario {
+  background: #d6a84f; /* fundo dourado */
+  color: #111; /* texto escuro */
+}
+
+.botao-primario:hover {
+  background: #f0bf61; /* muda cor ao passar o mouse */
+  transform: translateY(-1px); /* sobe levemente */
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /* define a fonte */
+  background:
+    radial-gradient(circle at top, rgba(255, 170, 0, 0.12), transparent 35%),
+    linear-gradient(180deg, #090b10, #0f131a 45%, #0b0d12);
+  color: var(--text); /* define a cor padrão do texto */
+  line-height: 1.6; /* define altura entre linhas */
+}
+
+.botao-pedido {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 44px;
+    border: none;
+    border-radius: ;
+}
