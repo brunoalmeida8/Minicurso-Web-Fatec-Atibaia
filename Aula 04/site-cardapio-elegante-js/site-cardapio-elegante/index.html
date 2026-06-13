@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabor Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="destaque-principal">
+      <nav class="barra-superior">
+        <div class="logo">Sabor Web</div>
+        <a href="#menu" class="botao-contorno">Ver menu</a>
+      </nav>
+
+      <div class="conteudo-destaque">
+        <p class="texto-destaque">Cardápio premium</p>
+        <h1>O sabor que chama atenção antes da primeira mordida.</h1>
+        <p class="subtitulo">
+          Lanches artesanais, ingredientes selecionados e uma experiência visual
+          elegante para encantar seu cliente.
+        </p>
+
+        <div class="acoes-destaque">
+          <a href="#menu" class="botao-primario">Explorar cardápio</a>
+          <a href="#video" class="botao-secundario">Assistir vídeo</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="video" class="secao-apresentacao">
+        <div class="texto-secao">
+          <p class="texto-destaque">Destaque da casa</p>
+          <h2>Um visual simples. Uma presença forte.</h2>
+          <p>
+            Um site pode ter pouco conteúdo e ainda assim transmitir valor,
+            sofisticação e desejo. O segredo está na organização, no contraste e
+            no cuidado com os detalhes.
+          </p>
+        </div>
+
+        <div class="card-video">
+          <video autoplay muted loop controls playsinline>
+            <source src="video.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeo em HTML5.
+          </video>
+        </div>
+      </section>
+
+      <section id="cardapio" class="cardapio">
+        <div class="texto-secao centralizado">
+          <p class="texto-destaque">Menu essencial</p>
+          <h2>Menos elementos. Mais impacto visual.</h2>
+        </div>
+
+        <div class="grade-cardapio">
+          <article class="card-item">
+            <h3>Signature Burger</h3>
+            <p>
+              Pão brioche, blend artesanal, queijo especial e molho da casa.
+            </p>
+            <span>R$ 29,90</span>
+            <textarea
+              id="obs-signature"
+              class="campo-observacao"
+              placeholder="Ex: sem cebola, bem passado"
+            ></textarea>
+            <p id="msg-signature" class="mensagem-pedido"></p>
+            <button class="botao-pedido" 
+              onclick="pedirProduto('Signature Burger', '29,90', 'obs-signature', 'msg-signature')"
+              >Fazer pedido</button>
+          </article>
+
+          <article class="card-item">
+            <h3>Classic Bacon</h3>
+            <p>Uma combinação equilibrada de crocância, sabor e suculência.</p>
+            <span>R$ 32,90</span>
+            <textarea
+              id="obs-bacon"
+              class="campo-observacao"
+              placeholder="Ex: sem cebola, bem passado"
+            ></textarea>
+            <p id="msg-bacon" class="mensagem-pedido"></p>
+            <button class="botao-pedido" 
+              onclick="pedirProduto('Classic Bacon', '32,90', 'obs-bacon', 'msg-bacon')"
+              >Fazer pedido</button>
+          </article>
+    
+          <article class="card-item">
+            <h3>Batata Trufada</h3>
+            <p>Perfeita para acompanhar e elevar a experiência do cliente.</p>
+            <span>R$ 18,90</span>
+            <textarea
+              id="obs-batata"
+              class="campo-observacao"
+              placeholder="Ex: sem cebola, bem passado"
+            ></textarea>
+            <p id="msg-batata" class="mensagem-pedido"></p>
+            <button class="botao-pedido" 
+              onclick="pedirProduto('Batata Trufada', '18,90', 'obs-batata', 'msg-batata')"
+              >Fazer pedido</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="chamada-acao">
+        <p class="texto-destaque">Peça agora</p>
+        <h2>Transforme fome em experiência.</h2>
+        <button class="botao-primario" onclick="fazerPedido()">Fazer pedido</button>
+      </section>
+    </main>
+    <footer>
+      <p>Sabor Web — Rua Exemplo, 123 • (11) 99999-9999</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
