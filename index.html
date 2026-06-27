@@ -1,12 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>⚡ Meus Projetos</title>
+    <style>
+
+        /* Configuração do fundo da tela */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Centraliza tudo no meio da tela */
+        }
+
+        /* Container dos botões */
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra suave no fundo */
+        }
+
+        /* Estilo dos Links */
+        a {
+            color: #333;
+            padding: 1rem 1.8rem;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            transition:  0.3s; /* efeito de passar o mouse mais suave */
+        }
+
+        /* Efeito quando passa o mouse */
+        a:hover {
+            color: white;
+            transform: translateY(-3px); 
+        }
+
+        /* Efeito exclusivo para cardapio */
+        #cardapio:hover {
+            background-color: darkgoldenrod;
+            border-color: darkgoldenrod;
+            box-shadow: 0 4px 10px rgba(184, 134, 11, 0.3); /* Sombra na cor do ouro */
+        }
+
+        /* Efeito exclusivo para curso */
+        #curso:hover {
+            background-color: #007acc; 
+            border-color: #007acc;;
+            box-shadow: 0 4px 10px rgba(0, 122, 204, 0.3);
+        }
+
+
+        
+    </style>
 </head>
+
 <body>
-    <a href="Aula 04/site-cardapio-elegante/index.html">Site Cardapio elegante</a> 
-    <a href="Aula 0">Site Final Cursos</a>
+    <div>
+        <a href="Aula 04/site-cardapio-elegante/index.html" id="cardapio">📜 Cardápio Elegante</a>
+        <a href="Aula 06/ProjetoEscolaCursos-Final/ProjetoEscolaCursos/index.html" id="curso">🎓 Portal de Cursos</a>
+    </div>
 </body>
+
 </html>
